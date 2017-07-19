@@ -15,3 +15,4 @@ ttl.value = rtl;
 ttr.value = rtr;
 tbr.value = rbr;
 tbl.value = rbl;
+block.style.borderRadius = rtl + 'px'+rtr+'px' + rbr + 'px'+rbl + 'px';
