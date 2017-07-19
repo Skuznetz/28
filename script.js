@@ -7,4 +7,6 @@ function fun1() {
 	var tbr=document.getElementBYId('tbr').value;
 	var tbl=document.getElementBYId('tbl').value;
 	var rbr=document.getElementBYId('rbr').value;
+
+	var block=document.getElementById('block') ;
 }
