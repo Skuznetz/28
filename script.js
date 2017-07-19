@@ -9,4 +9,9 @@ function fun1() {
 	var rbr=document.getElementBYId('rbr').value;
 
 	var block=document.getElementById('block') ;
+
 }
+ttl.value = rtl;
+ttr.value = rtr;
+tbr.value = rbr;
+tbl.value = rbl;
