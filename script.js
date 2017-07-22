@@ -1,18 +1,20 @@
 function fun1() {
-	var rtl=document.getElementBYId('rtl').value;
-	var rtr=document.getElementBYId('rtr').value;
-	var rbl=document.getElementBYId('rbl').value;
-	var ttl=document.getElementBYId('ttl').value;
-	var ttr=document.getElementBYId('ttr').value;
-	var tbr=document.getElementBYId('tbr').value;
-	var tbl=document.getElementBYId('tbl').value;
-	var rbr=document.getElementBYId('rbr').value;
+	var rtl=document.getElementById('rtl').value;
+	var rtr=document.getElementById('rtr').value;
+	var rbl=document.getElementById('rbl').value;
+	var rbr=document.getElementById('rbr').value;
+	var ttl=document.getElementById('ttl');
+	var ttr=document.getElementById('ttr');
+	var tbr=document.getElementById('tbr');
+	var tbl=document.getElementById('tbl');
+	
 
 	var block=document.getElementById('block') ;
 
-}
+
 ttl.value = rtl;
 ttr.value = rtr;
 tbr.value = rbr;
 tbl.value = rbl;
-block.style.borderRadius = rtl + 'px'+rtr+'px' + rbr + 'px'+rbl + 'px';
+block.style.borderRadius = rtl + 'px ' + rtr +'px ' + rbr + 'px '+ rbl + 'px ';
+}
