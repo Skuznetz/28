@@ -27,8 +27,8 @@ function move() {
 			clearInterval(id);
 		}else {
 			width++;
-			elem.stile.width = width + '%';
-			document.getElementById("label").innerHTML=width * 1 + '%';
+			elem.style.width = width + '%';
+			document.getElementById("label").innerHTML=width*1 +'%';
 		}
 	}
 }
