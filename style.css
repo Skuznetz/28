@@ -1,8 +1,8 @@
-/*#block{
+#block{
 	width: 200px;
 	height: 100px;
 	background: green;
-}*/
+}
 #myProgress {
 	position: relative;
 	width: 1000px;
