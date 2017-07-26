@@ -35,7 +35,18 @@ function move() {
 }
 
 function myMove() {
-	var elem =document.getElementById("myAnimation");
+	var elem = document.getElementById("myAnimation");
 	var pos = 0;
-	var id = setInterva(frame,10);
+	var id = setInterval(frame,10);
+
+
+function frame() {
+	if (pos==150){
+		clearInterval(id);
+	}else {
+		pos++;
+		elem.style.top = pos+'px';
+		elem.style.left = pos + 'px';
+	}
+	}
 }
