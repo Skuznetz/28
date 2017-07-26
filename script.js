@@ -33,3 +33,9 @@ function move() {
 		}
 	}
 }
+
+function myMove() {
+	var elem =document.getElementById("myAnimation");
+	var pos = 0;
+	var id = setInterva(frame,10);
+}
