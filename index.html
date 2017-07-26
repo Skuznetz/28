@@ -77,6 +77,8 @@
 </body>
 </html>
 
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -85,6 +87,11 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+   <h1>Money Converter</h1> 
+   <p>
+       <label>$</label>
+       <input type="number" id="inputdol" placeholder="$" oninput="moneyConverter(this.value)" onchange="moneyConverter(this.value)">
+   </p>
+   <p>Rub: <span id="outputrub"></span></p>
 </body>
 </html>
