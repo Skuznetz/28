@@ -55,3 +55,9 @@ function myMove() {
 function moneyConverter(valNum) {
     document.getElementById("outputrub").innerHTML = valNum * 60;
 }
+
+function plus() {
+    var num1,num2,resalt;
+    num1 = document.getElementById('n1').value;
+    num1 = parseInt(num1);
+}
