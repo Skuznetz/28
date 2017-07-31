@@ -63,34 +63,34 @@ function plus() {
     num2 = document.getElementById('n2').value;
     num2 = parseInt(num2);
     resalt = num1 + num2;
-    document.getElementById('out').innerHTML=result;
+    document.getElementById('out').innerHTML=resalt;
 }
 
 function minus() {
-    var num1,num2,result;
+    var num1,num2,resalt;
     num1 = document.getElementById('n1').value;
     num1 = parseInt(num1);
     num2 = document.getElementById('n2').value;
     num2 = parseInt(num2);
     resalt = num1 - num2;
-    document.getElementById('out').innerHTML=result;
+    document.getElementById('out').innerHTML=resalt;
 }
 function um() {
-    var num1,num2,result;
+    var num1,num2,resalt;
     num1 = document.getElementById('n1').value;
     num1 = parseInt(num1);
     num2 = document.getElementById('n2').value;
     num2 = parseInt(num2);
     resalt = num1 * num2;
-    document.getElementById('out').innerHTML=result;
+    document.getElementById('out').innerHTML=resalt;
 }
 
 function del() {
-    var num1,num2,result;
+    var num1,num2,resalt;
     num1 = document.getElementById('n1').value;
     num1 = parseInt(num1);
     num2 = document.getElementById('n2').value;
     num2 = parseInt(num2);
     resalt = num1 / num2;
-    document.getElementById('out').innerHTML=result;
+    document.getElementById('out').innerHTML=resalt;
 }
