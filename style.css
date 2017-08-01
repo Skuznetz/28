@@ -38,6 +38,7 @@
     position: absolute;
     background: red;
 }
+body {margin:0;}
 
 up.topnav{
     list-style-type: none;
