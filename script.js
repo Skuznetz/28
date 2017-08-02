@@ -95,3 +95,12 @@ function del() {
     resalt = num1 / num2;
     document.getElementById('out').innerHTML = resalt;
 }
+
+function myFunction() {
+    var x= document.getElementById("myTopnav");
+    if(x.className === "topnav") {
+        x.className +=" responsive"
+    }else {
+        x.className = "topnav";
+    }
+}
