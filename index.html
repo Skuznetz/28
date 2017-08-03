@@ -99,7 +99,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body onload = "click()">
+<body>
     <p>Число 1:
         <input type="text" id="n1">
     </p>
@@ -120,13 +120,45 @@
         <li class="icon"><a href="javascript :void(0);" style="font-size: 15px; onclick=" myFunction() "">&#9776;</a></li>
     </ul>
 
-    <form name ="clock">
+    
+    <script scr="script.js"></script>
+</body>
+
+</html>
+<html>
+<head>
+<script language="JavaScript">
+var timeStr,dataStr;
+function clock() {
+    now = new Date();
+    // время
+    hours = now.getHours();
+    minutes =now.getMinutes();
+    seconds = now.getSeconds();
+    timeStr = "+ hours";
+    timeStr+=((minutes <10) ? ":0" : ":")+minutes;
+    timeStr+=((seconds <10) ? ":0" : ":")+seconds;
+    document.clocl.time.value = timeStr;
+    //Data
+    date = now.getDate();
+    month = now.getMonth()+1;
+    year = 1900 + now.getYear();
+    dataStr ="" + month;
+    dataStr += ((date<10) ? "/0" : "/") +date;
+    dateStr += "/" + year;
+    document.clock.date.value =dateStr;
+    Timer = settimeout("clock()",1000);
+}
+</script> 
+</head>
+<body onload="click()">
+<form name ="clock">
     Время :
     <input type="text" name="time" size="8" value=""><br>
     Data :
     <input type="text" name="date" size="8" value="">
     </form>
-    <script scr="script.js"></script>
+    
 </body>
 
 </html>
