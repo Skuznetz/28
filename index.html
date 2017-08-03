@@ -119,46 +119,52 @@
         <li><a href="">About</a></li>
         <li class="icon"><a href="javascript :void(0);" style="font-size: 15px; onclick=" myFunction() "">&#9776;</a></li>
     </ul>
-
-    
     <script scr="script.js"></script>
 </body>
 
 </html>
+
+</html>
 <html>
 <head>
-<script language="JavaScript">
-var timeStr,dataStr;
-function clock() {
-    now = new Date();
-    // время
-    hours = now.getHours();
-    minutes =now.getMinutes();
-    seconds = now.getSeconds();
-    timeStr = "+ hours";
-    timeStr+=((minutes <10) ? ":0" : ":")+minutes;
-    timeStr+=((seconds <10) ? ":0" : ":")+seconds;
-    document.clocl.time.value = timeStr;
-    //Data
-    date = now.getDate();
-    month = now.getMonth()+1;
-    year = 1900 + now.getYear();
-    dataStr ="" + month;
-    dataStr += ((date<10) ? "/0" : "/") +date;
-    dateStr += "/" + year;
-    document.clock.date.value =dateStr;
-    Timer = settimeout("clock()",1000);
-}
-</script> 
-</head>
-<body onload="click()">
-<form name ="clock">
-    Время :
-    <input type="text" name="time" size="8" value=""><br>
-    Data :
-    <input type="text" name="date" size="8" value="">
-    </form>
-    
-</body>
+<script Language="JavaScript">
 
+var  timeStr,  dateStr;
+function clock()  {
+now= new Date() ;
+//  время
+hours= now.getHours() ;
+minutes= now.getMinutes() ;
+seconds= now.getSeconds() ;
+timeStr=  ""  +  hours;
+if    (minutes    <    10)    timeStr+=   ":0"    +   minutes
+else    timeStr+=   ":"    +   minutes;
+// timeStr+= ((minutes < 10) ? ": 0" : ":")  + minutes;
+// timeStr+= ((seconds < 10) ? ": 0" : ":")  + seconds;
+if    (seconds    <    10)    timeStr+=   ":0"    +   seconds
+else    timeStr+=   ":"    +   seconds;
+document.clock.time.value  =  timeStr;
+// дата
+date= now.getDate() ;
+ month= now.getMonth() + 1;
+
+year= 1900 + now.getYear();
+dateStr= "" + month;
+dateStr+=  ((date < 10)  ? "/0" : "/")  + date;
+dateStr+=  "/" + year;
+document.clock.date.value = dateStr;
+Timer=  setTimeout ("clock () ", 1000);
+
+}
+
+</script>
+</head>
+<body  onLoad="clock()">
+<form  name="clock">
+Время:
+<input type="text" name="time" size="8" value=""><br>
+Дата:
+<input type="text" name="date" size="8" value="">
+</form>
+</body>
 </html>
