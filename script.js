@@ -1,3 +1,26 @@
+var timeStr,dataStr;
+function clock() {
+    now = new Date();
+    // время
+    hours = now.getHours();
+    minutes =now.getMinutes();
+    seconds = now.getSeconds();
+    timeStr = "+ hours";
+    timeStr+=((minutes <10) ? ":0" : ":")+minutes;
+    timeStr+=((seconds <10) ? ":0" : ":")+seconds;
+    document.clocl.time.value = timeStr;
+    //Data
+    date = now.getDate();
+    month = now.getMonth()+1;
+    year = 1900 + now.getYear();
+    dataStr ="" + month;
+    dataStr += ((date<10) ? "/0" : "/") +date;
+    dateStr += "/" + year;
+    document.clock.date.value =dateStr;
+    Timer = settimeout("clock()",1000);
+}
+
+
 function fun1() {
     var rtl = document.getElementById('rtl').value;
     var rtr = document.getElementById('rtr').value;
