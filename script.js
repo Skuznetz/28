@@ -1,6 +1,3 @@
-
-
-
 function fun1() {
     var rtl = document.getElementById('rtl').value;
     var rtr = document.getElementById('rtr').value;
@@ -100,35 +97,35 @@ function del() {
 }
 
 function myFunction() {
-    var x= document.getElementById("myTopnav");
-    if(x.className === "topnav") {
-        x.className +=" responsive"
-    }else {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive"
+    } else {
         x.className = "topnav";
+
     }
 }
 
-document.getElementById('nav').onmouseover=function(event) {
-    var target=event.target;
-    if (target.className=='menu-item') {
-        var s=target.getElementsByClassName('submenu');
+document.getElementById('nav').onmouseover = function(event) {
+    var target = event.target;
+    if (target.className == 'menu-item') {
+        var s = target.getElementsByClassName('submenu');
         closeMenu();
-        s[0].style.display='block';
+        s[0].style.display = 'block';
     }
 }
-document.onmouseover=function(event) {
-    var target=event.target;
+document.onmouseover = function(event) {
+    var target = event.target;
     console.log(event.target);
-    if (target.className!='menu-item'&& target.className!='submenu' {
+    if (target.className != 'menu-item' && target.className != 'submenu') {
         closeMenu();
-    })
-}
-/*
-function closeMenu() {
-    var menu=document.getElementById('nav');
-    var subm=document.getElementsByClassName('submenu');
-    for (var i=0;i<subm.length;i++) {
-        subm[j].style.display="none";
     }
 }
-/*
+
+function closeMenu() {
+    var menu = document.getElementById('nav');
+    var subm = document.getElementsByClassName('submenu');
+    for (var i = 0; i < subm.length; i++) {
+        subm[i].style.display = "none";
+    }
+}
