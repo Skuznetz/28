@@ -134,3 +134,4 @@ ul.topnav li.icon {
     cursor: pointer;
     transition: 0.3s;
 }
+.closebtn:hover {color:black;}
