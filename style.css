@@ -106,27 +106,39 @@ ul.topnav li.icon {
     position: absolute;
     cursor: pointer;
 }
- #myDiv {
-    width:100%;
-    padding:50px 0;
-    text-align:center;
+
+#myDiv {
+    width: 100%;
+    padding: 50px 0;
+    text-align: center;
     background-color: green;
     margin-top: 20px;
+}
 
-  }
-  .alert {
-    padding:20px;
+.alert {
+    padding: 20px;
     background-color: #f44336;
-    color:white;transition :opasity 0.6s;
-    opasity: 1;margin-bottom: 15px;
-  }
+    color: white;
+    transition: opasity 0.6s;
+    opasity: 1;
+    margin-bottom: 15px;
+}
 
-  .alert.success {background-color: #4caf50;}
-  .alert.info {background-color: #2196f3;}
-.alert.warning {background-color: #ff9800;}
+.alert.success {
+    background-color: #4caf50;
+}
+
+.alert.info {
+    background-color: #2196f3;
+}
+
+.alert.warning {
+    background-color: #ff9800;
+}
+
 .closebtn {
     margin-left: 15px;
-    color:white;
+    color: white;
     font-weight: bold;
     float: right;
     font-size: 22px;
@@ -134,4 +146,7 @@ ul.topnav li.icon {
     cursor: pointer;
     transition: 0.3s;
 }
-.closebtn:hover {color:black;}
+
+.closebtn:hover {
+    color: black;
+}
