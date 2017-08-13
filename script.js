@@ -147,5 +147,5 @@ for (i = 0; i < close.length; i++) {
         setTimeout(function() {
             div.style.display = "none";
         }, 600);
-}
+    }
 }
