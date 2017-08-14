@@ -149,3 +149,7 @@ for (i = 0; i < close.length; i++) {
         }, 600);
     }
 }
+
+var modal = document.getElementById('myModal');
+var btn = document.getElementById("myBtn");
+var span = document.getElementsByClassName("close")[0];
