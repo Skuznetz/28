@@ -156,3 +156,6 @@ var span = document.getElementsByClassName("close")[0];
 btn.onclick = function () {
     modal.style.display = "block";
 }
+asnp.onclick = function() {
+    modal.style.display = "none";
+}
